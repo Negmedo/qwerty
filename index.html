@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="main-form" onsubmit="return checkForm(this)" method="post">
+            <h2>Aimer</h2>
+            <label for="name">Номер телефона</label>
+            <input type="tel" id="name" name="name" placeholder="Введите номер телефона">
+            <label for="password">Пaроль</label>
+            <input type="password" id="password" name="password" placeholder="Пaроль">
+            <div id="error"></div>
+            <button type="submit">Авторизоваться</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

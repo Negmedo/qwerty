@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMER</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="logo">AIMER</h1>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </header>
+
+    <nav class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="index1.html">Home</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="card-container">
+            <div class="bank-card">
+                <img src="https://gorcom36.ru/upload/iblock/c1f/qrcodecurves.png" alt="QR Code" class="card-qr">
+                <p class="card-number">1234 5678 9123 4567</p>
+            </div>
+        </div>
+
+        <div class="personal-data">
+            <h1>Ваши данные:</h1>
+            <p>ФИО: Иванов Иван Иванович</p>
+            <p>Номер телефона: +7 (777) 927-14-23</p>
+            <p>Номер карты: 1234 5678 9123 4567</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="bonus-history">Ваши бонусы: 354</div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sideMenu').classList.toggle('open');
+        }
+
+        window.addEventListener('click', function(event) {
+            const menu = document.getElementById('sideMenu');
+            const menuIcon = document.querySelector('.menu-icon');
+            if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+                menu.classList.remove('open');
+            }
+        });
+    </script>
+</body>
+</html>
